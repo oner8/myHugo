@@ -2,3 +2,18 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+
+video {outline: none;}
+
+.post-content .flinks {
+    padding: 0
+}
+
+.post-content .flinks li {
+    display: inline-block;
+    overflow: hidden;
+    width: 25%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: .6em 0;
+}

@@ -8,7 +8,13 @@ paginate = 12
 enableEmoji = true
 enableRobotsTXT = true
 googleAnalytics = ""
-disqusShortname = "yourdiscussshortname"
+disqusShortname = ""
+
+# 启用unsafe模式，使html代码生效
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [sitemap]
   changefreq = "monthly"
@@ -21,7 +27,7 @@ disqusShortname = "yourdiscussshortname"
   noreferrerLinks = true
 
 [Permalinks]
- posts = "/:year/:filename/"
+ posts = "/:year/:title/"
 
 [menu]
   [[menu.main]]
@@ -35,12 +41,17 @@ disqusShortname = "yourdiscussshortname"
     weight = 3
 
   [[menu.main]]
-    name = "About"
-    url = "/about"
+    name = "Links"
+    url = "/links.html"
     weight = 4
 
+  [[menu.main]]
+    name = "About"
+    url = "/about.html"
+    weight = 5
+
 [params]
-    since = 2012
+    since = 2016
     author = "DAN.yu"               # Author's name
     subtitle = "Be yourself, everyone else is already taken. "       # Subtitle
     cdn_url = ""           # Base CDN URL
@@ -52,7 +63,7 @@ disqusShortname = "yourdiscussshortname"
     pinterest_verification = ""
     baidu_verification = ""
 
-    avatar = "/images/me/logo.png" #comment it to use gravatar
+    # avatar = "/images/me/logo.png" #comment it to use gravatar
     socialShare = true
 
     description = "" # site description
@@ -61,7 +72,7 @@ disqusShortname = "yourdiscussshortname"
     license= 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
 [params.gravatar]
-    #email = "example@gmail.com"   #uncomment and insert your email address to use gravatar
+    email = "realdannyw@gmail.com"   #uncomment and insert your email address to use gravatar
 
 
 [params.social]
